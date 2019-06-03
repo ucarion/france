@@ -2,6 +2,9 @@ import readLegislatures from "./readLegislatures";
 import libxml from "libxmljs";
 
 const barWidth = 1;
+const paddingPerCol = 10;
+const partyPerCol = 200;
+const sessionLengthScaleFactor = 500000000;
 
 async function main() {
   const { data } = await readLegislatures("data/legislatures.yml");
@@ -19,7 +22,7 @@ async function main() {
 
     if (index !== legislatures.length - 1) {
       const delta = new Date(legislatures[index + 1].date) - new Date(legislatures[index].date);
-      sessionLengths.push(delta / 20000000000);
+      sessionLengths.push(delta / sessionLengthScaleFactor);
     }
   }
 
@@ -34,7 +37,7 @@ async function main() {
   for (const [sessionIndex, parliament] of partySizes.entries()) {
     const parliamentSize = parliament.reduce((a, b) => a + b, 0);
 
-    const padding = 30 / (parliament.length - 1);
+    const padding = paddingPerCol / (parliament.length - 1);
 
     const coords = [];
     let y = 0;
@@ -43,16 +46,16 @@ async function main() {
         .attr("x", x)
         .attr("y", y)
         .attr("width", barWidth)
-        .attr("height", (100 * party / parliamentSize).toString())
+        .attr("height", (partyPerCol * party / parliamentSize).toString())
         .attr("fill", partyColors[sessionIndex][partyIndex])
         .parent();
 
-      coords.push([x, y, 100 * party / parliamentSize]);
-      y += (100 * party / parliamentSize) + padding;
+      coords.push([x, y, partyPerCol * party / parliamentSize]);
+      y += (partyPerCol * party / parliamentSize) + padding;
     }
 
     partyCoords.push(coords);
-    x += sessionLengths[sessionIndex] * 30;
+    x += sessionLengths[sessionIndex];
   }
 
   for (const [year, yearLinks] of partyLinks.entries()) {
