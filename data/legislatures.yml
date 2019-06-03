@@ -2,6 +2,7 @@ data:
   reference: https://fr.wikipedia.org/wiki/Composition_de_l%27Assembl%C3%A9e_nationale_fran%C3%A7aise_par_l%C3%A9gislature
   legislatures:
     - name: États généraux de 1789
+      date: "1789-05-05"
       parties:
         - name: Tiers état
           seats: 578
@@ -13,6 +14,7 @@ data:
           seats: 270
           becomes: [2]
     - name: Assemblée nationale constituante de 1789
+      date: "1789-06-17"
       parties:
         - name: Tiers état
           seats: 584
@@ -24,6 +26,7 @@ data:
           seats: 270
           becomes: []
     - name: Assemblée nationale législative de 1791
+      date: "1791-09-30"
       parties:
         - name: Girondins
           seats: 136
@@ -35,6 +38,7 @@ data:
           seats: 264
           becomes: []
     - name: Convention nationale (1792-1795)
+      date: "1792-09-20"
       parties:
         - name: Montagnards
           seats: 200

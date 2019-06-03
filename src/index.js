@@ -1,6 +1,8 @@
 import readLegislatures from "./readLegislatures";
 import libxml from "libxmljs";
 
+const barWidth = 1;
+
 async function main() {
   const { data } = await readLegislatures("data/legislatures.yml");
   const { legislatures } = data;
@@ -9,10 +11,14 @@ async function main() {
   const partyLinks = [];
   const sessionLengths = [];
 
-  for (const { parties } of legislatures) {
+  for (const [index, { parties }] of legislatures.entries()) {
     partySizes.push(parties.map(p => p.seats));
     partyLinks.push(parties.map(p => p.becomes));
-    sessionLengths.push(1);
+
+    if (index !== legislatures.length - 1) {
+      const delta = new Date(legislatures[index + 1].date) - new Date(legislatures[index].date);
+      sessionLengths.push(delta / 20000000000);
+    }
   }
 
   const svg = libxml.Document().node("svg").attr("xmlns", "http://www.w3.org/2000/svg");
@@ -33,7 +39,7 @@ async function main() {
       svg.node("rect")
         .attr("x", x)
         .attr("y", y)
-        .attr("width", "10")
+        .attr("width", barWidth)
         .attr("height", (100 * party / parliamentSize).toString())
         .parent();
 
@@ -107,11 +113,11 @@ async function main() {
         svg.node("path")
           .attr("opacity", "0.1")
           .attr("d", `
-            M ${fromX + 10} ${heightOffset + fromY}
-            L ${fromX + 10} ${heightOffset + fromY + proportionalFromHeight}
-            C ${fromX + 10 + deltaX / 2} ${heightOffset + fromY + proportionalFromHeight} ${toX - deltaX / 2} ${toY + offsetFromPeers + proportionalPeerHeight} ${toX} ${toY + offsetFromPeers + proportionalPeerHeight}
+            M ${fromX + barWidth} ${heightOffset + fromY}
+            L ${fromX + barWidth} ${heightOffset + fromY + proportionalFromHeight}
+            C ${fromX + barWidth + deltaX / 2} ${heightOffset + fromY + proportionalFromHeight} ${toX - deltaX / 2} ${toY + offsetFromPeers + proportionalPeerHeight} ${toX} ${toY + offsetFromPeers + proportionalPeerHeight}
             L ${toX} ${toY + offsetFromPeers}
-            C ${toX - deltaX} ${toY + offsetFromPeers} ${fromX + 10 + deltaX} ${heightOffset + fromY} ${fromX + 10} ${heightOffset + fromY}
+            C ${toX - deltaX} ${toY + offsetFromPeers} ${fromX + 10 + deltaX} ${heightOffset + fromY} ${fromX + barWidth} ${heightOffset + fromY}
           `);
 
         heightOffset += proportionalFromHeight;
