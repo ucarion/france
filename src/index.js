@@ -2,8 +2,8 @@ import readLegislatures from "./readLegislatures";
 import libxml from "libxmljs";
 
 const barWidth = 1;
-const paddingPerCol = 10;
-const partyPerCol = 200;
+const paddingPerCol = 50;
+const partyPerCol = 500;
 const sessionLengthScaleFactor = 500000000;
 
 async function main() {
@@ -26,7 +26,12 @@ async function main() {
     }
   }
 
-  const svg = libxml.Document().node("svg").attr("xmlns", "http://www.w3.org/2000/svg");
+  const viewBoxWidth = sessionLengths.reduce((a, b) => a + b) + barWidth + 50;
+
+  const svg = libxml.Document()
+    .node("svg")
+    .attr("xmlns", "http://www.w3.org/2000/svg")
+    .attr("viewBox", `0 0 ${viewBoxWidth} ${paddingPerCol + partyPerCol}`)
   const defs = svg.node("defs");
 
   // Corresponds to the shape of `partySizes`, but with the party sizes replaced
@@ -115,7 +120,7 @@ async function main() {
         //   const deltaX = toX - (fromX + 10);
         //
         // It turns out, in my opinion, that a simple constant looks better.
-        const deltaX = 10;
+        const deltaX = 0;
 
         defs.node("linearGradient")
           .attr("id", `${year}-${fromIndex}-${outIndex}`)

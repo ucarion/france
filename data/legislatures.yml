@@ -61,3 +61,450 @@ data:
           seats: 160
           becomes: []
           color: "red"
+    - name: IIIe législature de la Cinquième République française
+      date: "1967-04-03"
+      parties:
+        - name: UDVR-RI
+          seats: 49.9
+          becomes: []
+          color: rgb(25, 53, 208)
+        - name: FGDS
+          seats: 24.01
+          becomes: []
+          color: rgb(231, 84, 128)
+        - name: PCF
+          seats: 14.99
+          becomes: []
+          color: rgb(228, 0, 43)
+        - name: CD
+          seats: 8.42
+          becomes: []
+          color: rgb(0, 204, 204)
+        - name: DVD
+          seats: 1.85
+          becomes: []
+          color: rgb(173, 193, 253)
+        - name: PSU
+          seats: 0.82
+          becomes: []
+          color: rgb(222, 49, 99)
+    - name: "IVe législature de la Cinquième République française"
+      date: "1968-06-11"
+      parties:
+        - name: UDR-RI
+          seats: 72.69
+          becomes: []
+          color: rgb(25, 53, 208)
+        - name: FGDS
+          seats: 11.7
+          becomes: []
+          color: rgb(231, 84, 128)
+        - name: PCF
+          seats: 6.98
+          becomes: []
+          color: rgb(228, 0, 43)
+        - name: PDM
+          seats: 6.78
+          becomes: []
+          color: cyan
+        - name: DVD
+          seats: 1.85
+          becomes: []
+          color: rgb(173, 193, 253)
+    - name: Ve législature de la Cinquième République française
+      date: "1973-04-02"
+      parties:
+        - name: URP
+          seats: 55.74
+          becomes: []
+          color: rgb(25, 53, 208)
+        - name: PS-MRG
+          seats: 20.9
+          becomes: []
+          color: rgb(237, 22, 81)
+        - name: PCF
+          seats: 14.96
+          becomes: []
+          color: rgb(228, 0, 43)
+        - name: MR
+          seats: 6.15
+          becomes: []
+          color: rgb(0, 204, 204)
+        - name: MAJ
+          seats: 2.46
+          becomes: []
+          color: rgb(0, 255, 153)
+        - name: DVG
+          seats: 0.82
+          becomes: []
+          color: rgb(255, 192, 192)
+        - name: PSU
+          seats: 0.2
+          becomes: []
+          color: rgb(222, 49, 99)
+    - name: VIe législature de la Cinquième République française
+      date: "1978-04-03"
+      parties:
+        - name: RPR
+          seats: 30.73
+          becomes: []
+          color: rgb(0, 102, 204)
+        - name: UDF
+          seats: 24.8
+          becomes: []
+          color: rgb(0, 204, 204)
+        - name: PS
+          seats: 21.31
+          becomes: []
+          color: rgb(237, 22, 81)
+        - name: PCF
+          seats: 17.62
+          becomes: []
+          color: rgb(228, 0, 43)
+        - name: MAJ
+          seats: 3.28
+          becomes: []
+          color: rgb(0, 255, 153)
+        - name: MRG
+          seats: 2.05
+          becomes: []
+          color: rgb(240, 194, 0)
+        - name: PSU
+          seats: 0.2
+          becomes: []
+          color: rgb(222, 49, 99)
+    - name: VIIe législature de la Cinquième République française
+      date: "1981-06-02"
+      parties:
+        - name: PS
+          seats: 57.64
+          becomes: []
+          color: rgb(237, 22, 81)
+        - name: RPR
+          seats: 17.31
+          becomes: []
+          color: rgb(0, 102, 204)
+        - name: UDF
+          seats: 12.63
+          becomes: []
+          color: rgb(0, 204, 204)
+        - name: PCF
+          seats: 8.96
+          becomes: []
+          color: rgb(228, 0, 43)
+        - name: DVD
+          seats: 2.24
+          becomes: []
+          color: rgb(173, 193, 253)
+        - name: DVG
+          seats: 1.22
+          becomes: []
+          color: rgb(255, 192, 192)
+    - name: VIIIe législature de la Cinquième République française
+      date: "1986-04-02"
+      parties:
+        - name: RPR-UDF
+          seats: 48.17
+          becomes: []
+          color: rgb(0, 102, 204)
+        - name: PS
+          seats: 35.91
+          becomes: []
+          color: rgb(237, 22, 81)
+        - name: PCF
+          seats: 6.11
+          becomes: []
+          color: rgb(228, 0, 43)
+        - name: FN
+          seats: 6.11
+          becomes: []
+          color: rgb(0, 74, 119)
+        - name: DVD
+          seats: 2.44
+          becomes: []
+          color: rgb(173, 193, 253)
+        - name: DVG
+          seats: 0.87
+          becomes: []
+          color: rgb(255, 192, 192)
+        - name: MRG
+          seats: 0.17
+          becomes: []
+          color: rgb(240, 194, 0)
+    - name: IXe législature de la Cinquième République française
+      date: "1988-06-23"
+      parties:
+        - name: PS
+          seats: 45.22
+          becomes: []
+          color: rgb(237, 22, 81)
+        - name: UDF
+          seats: 22.43
+          becomes: []
+          color: rgb(0, 204, 204)
+        - name: RPR
+          seats: 21.91
+          becomes: []
+          color: rgb(0, 102, 204)
+        - name: PCF
+          seats: 4.7
+          becomes: []
+          color: rgb(228, 0, 43)
+        - name: DVD
+          seats: 2.78
+          becomes: []
+          color: rgb(173, 193, 253)
+        - name: MRG
+          seats: 1.56
+          becomes: []
+          color: rgb(240, 194, 0)
+        - name: DVG
+          seats: 1.22
+          becomes: []
+          color: rgb(255, 192, 192)
+        - name: FN
+          seats: 0.17
+          becomes: []
+          color: rgb(0, 74, 119)
+    - name: Xe législature de la Cinquième République française
+      date: "1993-04-02"
+      parties:
+        - name: RPR
+          seats: 41.94
+          becomes: []
+          color: rgb(0, 102, 204)
+        - name: UDF
+          seats: 35.87
+          becomes: []
+          color: rgb(0, 204, 204)
+        - name: PS
+          seats: 9.19
+          becomes: []
+          color: rgb(237, 22, 81)
+        - name: DVD
+          seats: 6.24
+          becomes: []
+          color: rgb(173, 193, 253)
+        - name: PCF
+          seats: 4.16
+          becomes: []
+          color: rgb(228, 0, 43)
+        - name: DVG
+          seats: 2.42
+          becomes: []
+          color: rgb(255, 192, 192)
+        - name: FN
+          seats: 0.17
+          becomes: []
+          color: rgb(0, 74, 119)
+    - name: XIe législature de la Cinquième République française
+      date: "1997-06-12"
+      parties:
+        - name: PS
+          seats: 44.19
+          becomes: []
+          color: rgb(237, 22, 81)
+        - name: RPR
+          seats: 24.09
+          becomes: []
+          color: rgb(0, 102, 204)
+        - name: UDF
+          seats: 19.41
+          becomes: []
+          color: rgb(0, 204, 204)
+        - name: PCF
+          seats: 6.07
+          becomes: []
+          color: rgb(228, 0, 43)
+        - name: PRS
+          seats: 2.08
+          becomes: []
+          color: rgb(240, 194, 0)
+        - name: The Greens
+          seats: 1.21
+          becomes: []
+          color: rgb(122, 180, 29)
+        - name: MDC
+          seats: 1.21
+          becomes: []
+          color: rgb(221, 57, 31)
+        - name: DVG
+          seats: 0.69
+          becomes: []
+          color: rgb(255, 192, 192)
+        - name: Others
+          seats: 1.05
+          becomes: []
+          color: gray
+    - name: XIIe législature de la Cinquième République française
+      date: "2002-06-19"
+      parties:
+        - name: UMP
+          seats: 61.87
+          becomes: []
+          color: rgb(0, 102, 204)
+        - name: PS
+          seats: 24.26
+          becomes: []
+          color: rgb(237, 22, 81)
+        - name: UDF
+          seats: 5.03
+          becomes: []
+          color: rgb(0, 204, 204)
+        - name: PCF
+          seats: 3.64
+          becomes: []
+          color: rgb(228, 0, 43)
+        - name: DVD
+          seats: 1.39
+          becomes: []
+          color: rgb(173, 193, 253)
+        - name: PRG
+          seats: 1.21
+          becomes: []
+          color: rgb(240, 194, 0)
+        - name: DVG
+          seats: 1.04
+          becomes: []
+          color: rgb(255, 192, 192)
+        - name: The Greens
+          seats: 0.52
+          becomes: []
+          color: rgb(122, 180, 29)
+        - name: Others
+          seats: 1.04
+          becomes: []
+          color: gray
+    - name: XIIIe législature de la Cinquième République française
+      date: "2007-06-20"
+      parties:
+        - name: UMP
+          seats: 54.25
+          becomes: []
+          color: rgb(0, 102, 204)
+        - name: PS
+          seats: 32.24
+          becomes: []
+          color: rgb(237, 22, 81)
+        - name: NC
+          seats: 3.81
+          becomes: []
+          color: rgb(141, 165, 211)
+        - name: DVG
+          seats: 2.6
+          becomes: []
+          color: rgb(255, 192, 192)
+        - name: PCF
+          seats: 2.6
+          becomes: []
+          color: rgb(228, 0, 43)
+        - name: DVD
+          seats: 1.56
+          becomes: []
+          color: rgb(173, 193, 253)
+        - name: PRG
+          seats: 1.21
+          becomes: []
+          color: rgb(240, 194, 0)
+        - name: The Greens
+          seats: 0.69
+          becomes: []
+          color: rgb(122, 180, 29)
+        - name: MoDem
+          seats: 0.52
+          becomes: []
+          color: orange
+        - name: Others
+          seats: 0.52
+          becomes: []
+          color: gray
+    - name: XIVe législature de la Cinquième République française
+      date: "2012-06-20"
+      parties:
+        - name: PS
+          seats: 48.53
+          becomes: []
+          color: rgb(237, 22, 81)
+        - name: UMP
+          seats: 33.62
+          becomes: []
+          color: rgb(0, 102, 204)
+        - name: DVG
+          seats: 3.29
+          becomes: []
+          color: rgb(255, 192, 192)
+        - name: EELV
+          seats: 2.95
+          becomes: []
+          color: rgb(122, 180, 29)
+        - name: DVD
+          seats: 2.6
+          becomes: []
+          color: rgb(173, 193, 253)
+        - name: NC
+          seats: 2.08
+          becomes: []
+          color: rgb(141, 165, 211)
+        - name: PRG
+          seats: 2.08
+          becomes: []
+          color: rgb(240, 194, 0)
+        - name: FDG
+          seats: 1.73
+          becomes: []
+          color: rgb(214, 35, 43)
+        - name: Radical
+          seats: 1.04
+          becomes: []
+          color: rgb(224, 176, 255)
+        - name: Others
+          seats: 2.08
+          becomes: []
+          color: lightgrey
+    - name: XVe législature de la Cinquième République française
+      date: "2017-06-21"
+      parties:
+        - name: REM/MoDem
+          seats: 60.66
+          becomes: []
+          color: rgb(255, 214, 0)
+        - name: LR/UDI/DVD
+          seats: 23.57
+          becomes: []
+          color: rgb(0, 102, 204)
+        - name: PS/PRG/DVG
+          seats: 7.8
+          becomes: []
+          color: rgb(237, 22, 81)
+        - name: FI
+          seats: 2.95
+          becomes: []
+          color: rgb(201, 70, 44)
+        - name: PCF
+          seats: 1.73
+          becomes: []
+          color: rgb(228, 0, 43)
+        - name: FN
+          seats: 1.39
+          becomes: []
+          color: rgb(0, 74, 119)
+        - name: Regionalists
+          seats: 0.87
+          becomes: []
+          color: rgb(255, 204, 51)
+        - name: Miscellaneous
+          seats: 0.52
+          becomes: []
+          color: rgb(221, 221, 221)
+        - name: Ecologists
+          seats: 0.17
+          becomes: []
+          color: rgb(119, 255, 119)
+        - name: DLF
+          seats: 0.17
+          becomes: []
+          color: rgb(0, 135, 205)
+        - name: Far-right
+          seats: 0.17
+          becomes: []
+          color: rgb(64, 64, 64)
