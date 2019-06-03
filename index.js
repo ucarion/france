@@ -50,7 +50,6 @@ for (const [year, yearLinks] of links.entries()) {
 
     let heightOffset = 0; // the amount of height consumed by preceding polygons
     for (const outIndex of outIndices) {
-      const path = [];
       const [fromX, fromY, fromHeight] = partyCoords[year][fromIndex];
       const [toX, toY, toHeight] = partyCoords[year + 1][outIndex];
 
@@ -91,15 +90,17 @@ for (const [year, yearLinks] of links.entries()) {
       // against all other peers.
       const proportionalPeerHeight = toHeight * parties[year][fromIndex] / sumPeerSize;
 
-      path.push([fromX + 10, heightOffset + fromY]);
-      path.push([fromX + 10, heightOffset + fromY + proportionalFromHeight]);
-      path.push([toX, toY + offsetFromPeers + proportionalPeerHeight]);
-      path.push([toX, toY + offsetFromPeers]);
+      const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      path.setAttribute("opacity", "0.1");
+      path.setAttribute("d", `
+        M ${fromX + 10} ${heightOffset + fromY}
+        L ${fromX + 10} ${heightOffset + fromY + proportionalFromHeight}
+        C ${fromX + 10 + 5} ${heightOffset + fromY + proportionalFromHeight} ${toX - 5} ${toY + offsetFromPeers + proportionalPeerHeight} ${toX} ${toY + offsetFromPeers + proportionalPeerHeight}
+        L ${toX} ${toY + offsetFromPeers}
+        C ${toX - 5} ${toY + offsetFromPeers} ${fromX + 10 + 5} ${heightOffset + fromY} ${fromX + 10} ${heightOffset + fromY}
+      `)
 
-      const polygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
-      polygon.setAttribute("points", path.map((coords) => coords.join(",")).join(" "));
-      polygon.setAttribute("opacity", "0.1");
-      svg.appendChild(polygon);
+      svg.appendChild(path);
 
       heightOffset += proportionalFromHeight;
     }
