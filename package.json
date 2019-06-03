@@ -13,7 +13,8 @@
     "testv": "jest --verbose=false"
   },
   "dependencies": {
-    "js-yaml": "^3.13.1"
+    "js-yaml": "^3.13.1",
+    "libxmljs": "^0.19.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",

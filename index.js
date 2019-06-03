@@ -9,7 +9,10 @@ const links = [
   [[0], [0, 4], [4], [5]],
 ];
 
-const svg = document.getElementById("root");
+const libxml = require("libxmljs");
+const svg = libxml.Document().node("svg").attr("xmlns", "http://www.w3.org/2000/svg");
+
+// const svg = document.getElementById("root");
 
 // Corresponds to the shape of `parties`, but with the party sizes replaced with
 // the [x, y, height] details of the rectangle for the party.
@@ -24,14 +27,20 @@ for (const [year, parliament] of parties.entries()) {
   const coords = [];
   let y = 0;
   for (const party of parliament) {
-    const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-    rect.setAttribute("x", x);
-    rect.setAttribute("y", y);
-    rect.setAttribute("width", "10");
-    rect.setAttribute("height", (100 * party / parliamentSize).toString());
+    // const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    // rect.setAttribute("x", x);
+    // rect.setAttribute("y", y);
+    // rect.setAttribute("width", "10");
+    // rect.setAttribute("height", (100 * party / parliamentSize).toString());
+
+    svg.node("rect")
+      .attr("x", x)
+      .attr("y", y)
+      .attr("width", "10")
+      .attr("height", (100 * party / parliamentSize).toString())
+      .parent();
 
     coords.push([x, y, 100 * party / parliamentSize]);
-    svg.appendChild(rect);
     y += (100 * party / parliamentSize) + padding;
   }
 
@@ -90,19 +99,21 @@ for (const [year, yearLinks] of links.entries()) {
       // against all other peers.
       const proportionalPeerHeight = toHeight * parties[year][fromIndex] / sumPeerSize;
 
-      const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      path.setAttribute("opacity", "0.1");
-      path.setAttribute("d", `
-        M ${fromX + 10} ${heightOffset + fromY}
-        L ${fromX + 10} ${heightOffset + fromY + proportionalFromHeight}
-        C ${fromX + 10 + 5} ${heightOffset + fromY + proportionalFromHeight} ${toX - 5} ${toY + offsetFromPeers + proportionalPeerHeight} ${toX} ${toY + offsetFromPeers + proportionalPeerHeight}
-        L ${toX} ${toY + offsetFromPeers}
-        C ${toX - 5} ${toY + offsetFromPeers} ${fromX + 10 + 5} ${heightOffset + fromY} ${fromX + 10} ${heightOffset + fromY}
-      `)
+      // const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
 
-      svg.appendChild(path);
+      svg.node("path")
+        .attr("opacity", "0.1")
+        .attr("d", `
+          M ${fromX + 10} ${heightOffset + fromY}
+          L ${fromX + 10} ${heightOffset + fromY + proportionalFromHeight}
+          C ${fromX + 10 + 5} ${heightOffset + fromY + proportionalFromHeight} ${toX - 5} ${toY + offsetFromPeers + proportionalPeerHeight} ${toX} ${toY + offsetFromPeers + proportionalPeerHeight}
+          L ${toX} ${toY + offsetFromPeers}
+          C ${toX - 5} ${toY + offsetFromPeers} ${fromX + 10 + 5} ${heightOffset + fromY} ${fromX + 10} ${heightOffset + fromY}
+        `);
 
       heightOffset += proportionalFromHeight;
     }
   }
 }
+
+console.log(svg.toString());
