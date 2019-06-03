@@ -8,11 +8,13 @@ async function main() {
   const { legislatures } = data;
 
   const partySizes = [];
+  const partyColors = [];
   const partyLinks = [];
   const sessionLengths = [];
 
   for (const [index, { parties }] of legislatures.entries()) {
     partySizes.push(parties.map(p => p.seats));
+    partyColors.push(parties.map(p => p.color));
     partyLinks.push(parties.map(p => p.becomes));
 
     if (index !== legislatures.length - 1) {
@@ -22,6 +24,7 @@ async function main() {
   }
 
   const svg = libxml.Document().node("svg").attr("xmlns", "http://www.w3.org/2000/svg");
+  const defs = svg.node("defs");
 
   // Corresponds to the shape of `partySizes`, but with the party sizes replaced
   // with the [x, y, height] details of the rectangle for the party.
@@ -35,12 +38,13 @@ async function main() {
 
     const coords = [];
     let y = 0;
-    for (const party of parliament) {
+    for (const [partyIndex, party] of parliament.entries()) {
       svg.node("rect")
         .attr("x", x)
         .attr("y", y)
         .attr("width", barWidth)
         .attr("height", (100 * party / parliamentSize).toString())
+        .attr("fill", partyColors[sessionIndex][partyIndex])
         .parent();
 
       coords.push([x, y, 100 * party / parliamentSize]);
@@ -110,8 +114,14 @@ async function main() {
         // It turns out, in my opinion, that a simple constant looks better.
         const deltaX = 10;
 
+        defs.node("linearGradient")
+          .attr("id", `${year}-${fromIndex}-${outIndex}`)
+          .node("stop").attr("offset", "0%").attr("stop-color", partyColors[year][fromIndex]).parent()
+          .node("stop").attr("offset", "100%").attr("stop-color", partyColors[year + 1][outIndex]).parent();
+
         svg.node("path")
           .attr("opacity", "0.1")
+          .attr("fill", `url(#${year}-${fromIndex}-${outIndex})`)
           .attr("d", `
             M ${fromX + barWidth} ${heightOffset + fromY}
             L ${fromX + barWidth} ${heightOffset + fromY + proportionalFromHeight}
