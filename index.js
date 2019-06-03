@@ -2,11 +2,19 @@ const parties = [
   [10, 50, 10],
   [5, 20, 30, 10],
   [5, 5, 5, 5, 5, 5],
+  [1, 1, 1, 1, 5, 1, 1],
 ];
 
 const links = [
   [[0], [1, 2], [3]],
   [[0], [0, 4], [4], [5]],
+  [[0, 4], [1, 4], [2, 4], [3, 4], [4, 5], [4, 6]],
+];
+
+const sessionLengths = [
+  1,
+  5,
+  3,
 ];
 
 const libxml = require("libxmljs");
@@ -16,8 +24,8 @@ const svg = libxml.Document().node("svg").attr("xmlns", "http://www.w3.org/2000/
 // the [x, y, height] details of the rectangle for the party.
 const partyCoords = [];
 
-for (const [year, parliament] of parties.entries()) {
-  const x = year * 30;
+let x = 0;
+for (const [sessionIndex, parliament] of parties.entries()) {
   const parliamentSize = parliament.reduce((a, b) => a + b, 0);
 
   const padding = 30 / (parliament.length - 1);
@@ -37,6 +45,7 @@ for (const [year, parliament] of parties.entries()) {
   }
 
   partyCoords.push(coords);
+  x += sessionLengths[sessionIndex] * 30;
 }
 
 for (const [year, yearLinks] of links.entries()) {
@@ -91,14 +100,21 @@ for (const [year, yearLinks] of links.entries()) {
       // against all other peers.
       const proportionalPeerHeight = toHeight * parties[year][fromIndex] / sumPeerSize;
 
+      // To have the bezier be the midpoint between the two sessions, use:
+      //
+      //   const deltaX = toX - (fromX + 10);
+      //
+      // It turns out, in my opinion, that a simple constant looks better.
+      const deltaX = 10;
+
       svg.node("path")
         .attr("opacity", "0.1")
         .attr("d", `
           M ${fromX + 10} ${heightOffset + fromY}
           L ${fromX + 10} ${heightOffset + fromY + proportionalFromHeight}
-          C ${fromX + 10 + 5} ${heightOffset + fromY + proportionalFromHeight} ${toX - 5} ${toY + offsetFromPeers + proportionalPeerHeight} ${toX} ${toY + offsetFromPeers + proportionalPeerHeight}
+          C ${fromX + 10 + deltaX / 2} ${heightOffset + fromY + proportionalFromHeight} ${toX - deltaX / 2} ${toY + offsetFromPeers + proportionalPeerHeight} ${toX} ${toY + offsetFromPeers + proportionalPeerHeight}
           L ${toX} ${toY + offsetFromPeers}
-          C ${toX - 5} ${toY + offsetFromPeers} ${fromX + 10 + 5} ${heightOffset + fromY} ${fromX + 10} ${heightOffset + fromY}
+          C ${toX - deltaX} ${toY + offsetFromPeers} ${fromX + 10 + deltaX} ${heightOffset + fromY} ${fromX + 10} ${heightOffset + fromY}
         `);
 
       heightOffset += proportionalFromHeight;
