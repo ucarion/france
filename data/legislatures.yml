@@ -1,62 +1,48 @@
 data:
   reference: https://fr.wikipedia.org/wiki/Composition_de_l%27Assembl%C3%A9e_nationale_fran%C3%A7aise_par_l%C3%A9gislature
   legislatures:
-    - nom: États généraux de 1789
+    - name: États généraux de 1789
       partis:
-        - nom: Tiers état
-          sieges: 578
-          liens:
-            - id: A
-        - nom: Clergé
-          sieges: 291
-          liens:
-            - id: B
-        - nom: Noblesse
-          sieges: 270
-          liens:
-            - id: B
-    - nom: Assemblée nationale constituante de 1789
+        - name: Tiers état
+          seats: 578
+          becomes: [0]
+        - name: Clergé
+          seats: 291
+          becomes: [1]
+        - name: Noblesse
+          seats: 270
+          becomes: [2]
+    - name: Assemblée nationale constituante de 1789
       partis:
-        - nom: Tiers état
-          sieges: 584
-          liens:
-            - depuis: A
-        - nom: Clergé
-          sieges: 291
-          liens:
-            - depuis: B
-        - nom: Noblesse
-          sieges: 270
-          liens:
-            - depuis: C
-    - nom: Assemblée nationale législative de 1791
+        - name: Tiers état
+          seats: 584
+          becomes: []
+        - name: Clergé
+          seats: 291
+          becomes: []
+        - name: Noblesse
+          seats: 270
+          becomes: []
+    - name: Assemblée nationale législative de 1791
       partis:
-        - nom: Girondins
-          sieges: 136
-          liens:
-            - id: A
-        - nom: Indépendants
-          sieges: 345
-          liens:
-            - id: B
-        - nom: Feuillants
-          sieges: 264
-          liens:
-            - id: C
-    - nom: Convention nationale (1792-1795)
+        - name: Girondins
+          seats: 136
+          becomes: [2]
+        - name: Indépendants
+          seats: 345
+          becomes: [0,1]
+        - name: Feuillants
+          seats: 264
+          becomes: []
+    - name: Convention nationale (1792-1795)
       partis:
-        - nom: Montagnards
-          sieges: 200
-          liens:
-            - id: A
-        - nom: Marais
-          sieges: 389
-          liens:
-            - id: B
-              depuis: A
-        - nom: Girondins
-          sieges: 160
-          liens:
-            - id: C
-              depuis: A
+        - name: Montagnards
+          seats: 200
+          becomes: []
+        - name: Marais
+          seats: 389
+          becomes: []
+        - name: Girondins
+          seats: 160
+          becomes: []
 
