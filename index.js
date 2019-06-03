@@ -12,8 +12,6 @@ const links = [
 const libxml = require("libxmljs");
 const svg = libxml.Document().node("svg").attr("xmlns", "http://www.w3.org/2000/svg");
 
-// const svg = document.getElementById("root");
-
 // Corresponds to the shape of `parties`, but with the party sizes replaced with
 // the [x, y, height] details of the rectangle for the party.
 const partyCoords = [];
@@ -27,12 +25,6 @@ for (const [year, parliament] of parties.entries()) {
   const coords = [];
   let y = 0;
   for (const party of parliament) {
-    // const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-    // rect.setAttribute("x", x);
-    // rect.setAttribute("y", y);
-    // rect.setAttribute("width", "10");
-    // rect.setAttribute("height", (100 * party / parliamentSize).toString());
-
     svg.node("rect")
       .attr("x", x)
       .attr("y", y)
@@ -98,8 +90,6 @@ for (const [year, yearLinks] of links.entries()) {
       // The height of our polygon's contribution is proportial to our size
       // against all other peers.
       const proportionalPeerHeight = toHeight * parties[year][fromIndex] / sumPeerSize;
-
-      // const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
 
       svg.node("path")
         .attr("opacity", "0.1")
