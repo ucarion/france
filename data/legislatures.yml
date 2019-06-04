@@ -61,6 +61,68 @@ data:
           seats: 160
           becomes: []
           color: "red"
+    - name: Ire législature de la Cinquième République française
+      date: "1958-12-09"
+      parties:
+        - name: UNR
+          seats: 206
+          becomes: []
+          color: "#0000C8"
+        - name: IPAS
+          seats: 117
+          becomes: []
+          color: "#1E90FF"
+        - name: FAEAS
+          seats: 66
+          becomes: []
+          color: "#888888"
+        - name: RPCD
+          seats: 66
+          becomes: []
+          color: "#00FFFF"
+        - name: SOC
+          seats: 47
+          becomes: []
+          color: "#FF8080"
+        - name: FANI
+          seats: 40
+          becomes: []
+          color: "#ffc0c0"
+        - name: Isolés
+          seats: 36
+          becomes: []
+          color: "#aaaaaa"
+    - name: IIe législature de la Cinquième République française
+      date: "1962-12-06"
+      parties:
+        - name: UNR-UDT
+          seats: 233
+          becomes: []
+          color: "#0066cc"
+        - name: SOC
+          seats: 66
+          becomes: []
+          color: "#FF8080"
+        - name: CD
+          seats: 55
+          becomes: []
+          color: "#00FFFF"
+        - name: COM
+          seats: 41
+          becomes: []
+          color: "#dd0000"
+        - name: RD
+          seats: 39
+          becomes: []
+          color: "#ffc0c0"
+        - name: RI
+          seats: 35
+          becomes: []
+          color: "#00FFFF"
+        - name: Non-Inscrits
+          seats: 13
+          becomes: []
+          color: "#aab1b7"
     - name: IIIe législature de la Cinquième République française
       date: "1967-04-03"
       parties:
