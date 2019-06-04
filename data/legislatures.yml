@@ -61,6 +61,123 @@ data:
           seats: 160
           becomes: []
           color: "red"
+    - name: Ire législature de la Quatrième République française
+      date: "1946-11-28"
+      parties:
+        - name: Communistes
+          seats: 182
+          becomes: []
+          color: "#dd0000"
+        - name: Mouvement républicain populaire et Républicain d'Action Paysanne et Sociale
+          seats: 173
+          becomes: []
+          color: "#00FFFF"
+        - name: Section française de l'Internationale ouvrière
+          seats: 101
+          becomes: []
+          color: "#FF8080"
+        - name: Républicain, radical et radical-socialiste
+          seats: 43
+          becomes: []
+          color: "#FF5E4D"
+        - name: Parti républicain de la liberté
+          seats: 38
+          becomes: []
+          color: "#0066cc"
+        - name: Républicains indépendants
+          seats: 28
+          becomes: []
+          color: "#26c4ec"
+        - name: Union démocratique et socialiste de la Résistance
+          seats: 26
+          becomes: []
+          color: "#ff55a3"
+        - name: Musulman Indépendant pour la Défense du Fédéralisme Algérien
+          seats: 8
+          becomes: []
+          color: "#c0c0c0"
+    - name: IIe législature de la Quatrième République française
+      date: "1951-07-05"
+      parties:
+        - name: Communistes et Républicains Progressistes
+          seats: 103
+          becomes: []
+          color: "#dd0000"
+        - name: Rassemblement du peuple français
+          seats: 121
+          becomes: []
+          color: "#0066cc"
+        - name: Socialiste
+          seats: 107
+          becomes: []
+          color: "#FF8080"
+        - name: Mouvement républicain populaire et Indépendants d'outre-mer
+          seats: 94
+          becomes: []
+          color: "#00FFFF"
+        - name: Républicain, radical et radical-socialiste
+          seats: 74
+          becomes: []
+          color: "#FF5E4D"
+        - name: Républicains indépendants
+          seats: 53
+          becomes: []
+          color: "#26c4ec"
+        - name:
+            Centre Républicain d'Action Paysanne et Sociale et des Démocrates Indépendants
+            et Français Indépendants
+          seats: 43
+          becomes: []
+          color: "#26c4ec"
+        - name: Union démocratique et socialiste de la Résistance
+          seats: 16
+          becomes: []
+          color: "#ff55a3"
+        - name: Rassemblement démocratique africain
+          seats: 3
+          becomes: []
+          color: "#ff9900"
+    - name: IIIe législature de la Quatrième République française
+      date: "1956-01-19"
+      parties:
+        - name: Communistes et Républicains Progressistes
+          seats: 150
+          becomes: []
+          color: "#dd0000"
+        - name: Indépendants et paysans d'action sociale et Paysan
+          seats: 95
+          becomes: []
+          color: "#26c4ec"
+        - name: Socialiste
+          seats: 94
+          becomes: []
+          color: "#FF8080"
+        - name: Mouvement républicain populaire et Indépendants d'outre-mer
+          seats: 83
+          becomes: []
+          color: "#00FFFF"
+        - name: Parti républicain, radical et radical-socialiste
+          seats: 58
+          becomes: []
+          color: "#FF5E4D"
+        - name: Union et fraternité française
+          seats: 52
+          becomes: []
+          color: "#5B3C11"
+        - name: Républicains sociaux
+          seats: 22
+          becomes: []
+          color: "#0066cc"
+        - name:
+            Union démocratique et socialiste de la Résistance et Rassemblement démocratique
+            africain
+          seats: 19
+          becomes: []
+          color: "#ff55a3"
+        - name: Rassemblement des gauches républicaines et du Centre républicain
+          seats: 14
+          becomes: []
+          color: "#adc1fd"
     - name: Ire législature de la Cinquième République française
       date: "1958-12-09"
       parties:
