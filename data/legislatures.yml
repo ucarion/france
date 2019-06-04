@@ -66,74 +66,74 @@ data:
       parties:
         - name: Union républicaine
           seats: 98
-          becomes: []
+          becomes: [0]
           color: rgb(222, 0, 0)
         - name: Républicains modérés
           seats: 193
-          becomes: []
+          becomes: [0]
           color: rgb(217, 150, 148)
-        - name: Libéraux
+        - name: Libéraux (Divers gauche)
           seats: 48
           becomes: []
-          color: rgb(255, 215, 0)
-        - name: Naundorffistes
+          color: rgb(255, 192, 192)
+        - name: Divers droite
           seats: 54
           becomes: []
-          color: rgb(149, 179, 215)
+          color: rgb(173, 193, 253)
         - name: Bonapartistes
           seats: 76
-          becomes: []
+          becomes: [2]
           color: rgb(15, 135, 19)
         - name: Orléanistes
           seats: 40
-          becomes: []
+          becomes: [3]
           color: rgb(7, 105, 163)
         - name: Légitimistes
           seats: 24
-          becomes: []
+          becomes: [4]
           color: rgb(0, 35, 149)
     - name: IIe législature de la Troisième République française
       date: "1877-11-07"
       parties:
         - name: Gauche républicaine
           seats: 313
-          becomes: []
+          becomes: [1]
           color: rgb(192, 80, 77)
-        - name: Naundorffistes
+        - name: Divers droite
           seats: 49
           becomes: []
-          color: rgb(149, 179, 215)
+          color: rgb(173, 193, 253)
         - name: Bonapartistes
           seats: 104
-          becomes: []
+          becomes: [4]
           color: rgb(15, 135, 19)
         - name: Orléanistes
           seats: 11
-          becomes: []
+          becomes: [5]
           color: rgb(7, 105, 163)
         - name: Légitimistes
           seats: 44
-          becomes: []
+          becomes: [5]
           color: rgb(0, 35, 149)
     - name: IIIe législature de la Troisième République française
       date: "1881-10-28"
       parties:
-        - name: Union républicaine
-          seats: 39
+        - name: Far left
+          seats: 46
           becomes: []
-          color: rgb(255, 0, 0)
-        - name: Gauche républicaine
+          color: red
+        - name: Union républicaine
           seats: 204
           becomes: []
           color: rgb(192, 80, 77)
-        - name: Gauche radicale
+        - name: Gauche républicaine
           seats: 168
           becomes: []
           color: rgb(217, 150, 148)
-        - name: Républicains opportunistes
-          seats: 46
+        - name: Divers gauche
+          seats: 39
           becomes: []
-          color: rgb(255, 215, 0)
+          color: rgb(255, 192, 192)
         - name: Bonapartistes
           seats: 46
           becomes: []
