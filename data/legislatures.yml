@@ -61,6 +61,548 @@ data:
           seats: 160
           becomes: []
           color: "red"
+    - name: Ire législature de la Troisième République française
+      date: "1876-03-08"
+      parties:
+        - name: Union républicaine
+          seats: 98
+          becomes: []
+          color: rgb(222, 0, 0)
+        - name: Républicains modérés
+          seats: 193
+          becomes: []
+          color: rgb(217, 150, 148)
+        - name: Libéraux
+          seats: 48
+          becomes: []
+          color: rgb(255, 215, 0)
+        - name: Naundorffistes
+          seats: 54
+          becomes: []
+          color: rgb(149, 179, 215)
+        - name: Bonapartistes
+          seats: 76
+          becomes: []
+          color: rgb(15, 135, 19)
+        - name: Orléanistes
+          seats: 40
+          becomes: []
+          color: rgb(7, 105, 163)
+        - name: Légitimistes
+          seats: 24
+          becomes: []
+          color: rgb(0, 35, 149)
+    - name: IIe législature de la Troisième République française
+      date: "1877-11-07"
+      parties:
+        - name: Gauche républicaine
+          seats: 313
+          becomes: []
+          color: rgb(192, 80, 77)
+        - name: Naundorffistes
+          seats: 49
+          becomes: []
+          color: rgb(149, 179, 215)
+        - name: Bonapartistes
+          seats: 104
+          becomes: []
+          color: rgb(15, 135, 19)
+        - name: Orléanistes
+          seats: 11
+          becomes: []
+          color: rgb(7, 105, 163)
+        - name: Légitimistes
+          seats: 44
+          becomes: []
+          color: rgb(0, 35, 149)
+    - name: IIIe législature de la Troisième République française
+      date: "1881-10-28"
+      parties:
+        - name: Union républicaine
+          seats: 39
+          becomes: []
+          color: rgb(255, 0, 0)
+        - name: Gauche républicaine
+          seats: 204
+          becomes: []
+          color: rgb(192, 80, 77)
+        - name: Gauche radicale
+          seats: 168
+          becomes: []
+          color: rgb(217, 150, 148)
+        - name: Républicains opportunistes
+          seats: 46
+          becomes: []
+          color: rgb(255, 215, 0)
+        - name: Bonapartistes
+          seats: 46
+          becomes: []
+          color: rgb(15, 135, 9)
+        - name: Monarchistes
+          seats: 42
+          becomes: []
+          color: rgb(31, 73, 123)
+    - name: IVe législature de la Troisième République française
+      date: "1885-11-10"
+      parties:
+        - name: Union républicaine
+          seats: 60
+          becomes: []
+          color: rgb(255, 0, 0)
+        - name: Gauche républicaine
+          seats: 40
+          becomes: []
+          color: rgb(192, 80, 77)
+        - name: Gauche radicale
+          seats: 83
+          becomes: []
+          color: rgb(217, 150, 148)
+        - name: Républicains opportunistes
+          seats: 200
+          becomes: []
+          color: rgb(255, 215, 0)
+        - name: Conservateurs
+          seats: 63
+          becomes: []
+          color: rgb(149, 179, 215)
+        - name: Bonapartistes
+          seats: 65
+          becomes: []
+          color: rgb(15, 135, 9)
+        - name: Monarchistes
+          seats: 73
+          becomes: []
+          color: rgb(31, 73, 123)
+    - name: Ve législature de la Troisième République française
+      date: "1889-10-06"
+      parties:
+        - name: Union républicaine
+          seats: 12
+          becomes: []
+          color: rgb(255, 0, 0)
+        - name: Gauche républicaine
+          seats: 100
+          becomes: []
+          color: rgb(192, 80, 77)
+        - name: Gauche radicale
+          seats: 216
+          becomes: []
+          color: rgb(217, 150, 148)
+        - name: Républicains opportunistes
+          seats: 52
+          becomes: []
+          color: rgb(255, 215, 0)
+        - name: Bonapartistes
+          seats: 38
+          becomes: []
+          color: rgb(15, 135, 9)
+        - name: Monarchistes
+          seats: 72
+          becomes: []
+          color: rgb(31, 73, 123)
+        - name: Boulangistes
+          seats: 88
+          becomes: []
+          color: rgb(0, 0, 0)
+    - name: Élections législatives françaises de 1893
+      date: "1893-09-03"
+      parties:
+        - name: Socialistes
+          seats: 31
+          becomes: []
+          color: rgb(255, 0, 0)
+        - name: Radicaux-socialistes
+          seats: 10
+          becomes: []
+          color: rgb(201, 103, 101)
+        - name: Gauche radicale
+          seats: 143
+          becomes: []
+          color: rgb(217, 150, 148)
+        - name: Républicains opportunistes
+          seats: 279
+          becomes: []
+          color: rgb(255, 215, 0)
+        - name: Ralliés
+          seats: 35
+          becomes: []
+          color: rgb(79, 129, 189)
+        - name: Monarchistes
+          seats: 63
+          becomes: []
+          color: rgb(31, 73, 123)
+        - name: Boulangistes
+          seats: 13
+          becomes: []
+          color: rgb(0, 0, 0)
+    - name: Élections législatives françaises de 1898
+      date: "1898-05-22"
+      parties:
+        - name: Socialistes
+          seats: 57
+          becomes: []
+          color: rgb(255, 0, 0)
+        - name: Socialistes indépendants
+          seats: 74
+          becomes: []
+          color: rgb(201, 103, 101)
+        - name: Radicaux indépendants
+          seats: 104
+          becomes: []
+          color: rgb(217, 150, 148)
+        - name: Républicains opportunistes
+          seats: 254
+          becomes: []
+          color: rgb(255, 215, 0)
+        - name: Ralliés
+          seats: 42
+          becomes: []
+          color: rgb(79, 129, 189)
+        - name: Monarchistes
+          seats: 44
+          becomes: []
+          color: rgb(31, 73, 123)
+        - name: Boulangistes
+          seats: 10
+          becomes: []
+          color: rgb(0, 0, 0)
+    - name: Élections législatives françaises de 1902
+      date: "1902-05-11"
+      parties:
+        - name: Socialistes
+          seats: 43
+          becomes: []
+          color: rgb(255, 0, 0)
+        - name: Socialistes indépendants
+          seats: 104
+          becomes: []
+          color: rgb(201, 103, 101)
+        - name: Radicaux indépendants
+          seats: 129
+          becomes: []
+          color: rgb(217, 150, 148)
+        - name: Républicains opportunistes
+          seats: 62
+          becomes: []
+          color: rgb(255, 215, 0)
+        - name: Républicains progressistes
+          seats: 127
+          becomes: []
+          color: rgb(166, 200, 240)
+        - name: ALP
+          seats: 35
+          becomes: []
+          color: rgb(91, 148, 217)
+        - name: Conservateurs
+          seats: 89
+          becomes: []
+          color: rgb(31, 73, 123)
+    - name: Élections législatives françaises de 1906
+      date: "1906-05-20"
+      parties:
+        - name: SFIO
+          seats: 78
+          becomes: []
+          color: rgb(240, 62, 62)
+        - name: PRS
+          seats: 48
+          becomes: []
+          color: rgb(255, 124, 115)
+        - name: PRRRS
+          seats: 132
+          becomes: []
+          color: rgb(255, 171, 171)
+        - name: ARD
+          seats: 54
+          becomes: []
+          color: rgb(166, 200, 240)
+        - name: ALP
+          seats: 90
+          becomes: []
+          color: rgb(91, 148, 217)
+        - name: Fédération républicaine
+          seats: 115
+          becomes: []
+          color: rgb(31, 73, 123)
+        - name: Action française
+          seats: 66
+          becomes: []
+          color: rgb(0, 0, 0)
+    - name: Élections législatives françaises de 1910
+      date: "1910-05-08"
+      parties:
+        - name: "SFIO "
+          seats: 75
+          becomes: []
+          color: rgb(240, 62, 62)
+        - name: "PRS "
+          seats: 113
+          becomes: []
+          color: rgb(255, 124, 115)
+        - name: "PRRRS "
+          seats: 149
+          becomes: []
+          color: rgb(255, 171, 171)
+        - name: "ARD "
+          seats: 85
+          becomes: []
+          color: rgb(166, 200, 240)
+        - name: "ALP "
+          seats: 59
+          becomes: []
+          color: rgb(91, 148, 217)
+        - name: "Fédération républicaine "
+          seats: 60
+          becomes: []
+          color: rgb(31, 73, 123)
+        - name: "Action française "
+          seats: 49
+          becomes: []
+          color: rgb(0, 0, 0)
+    - name: Élections législatives françaises de 1914
+      date: "1914-05-10"
+      parties:
+        - name: SFIO
+          seats: 89
+          becomes: []
+          color: rgb(240, 62, 62)
+        - name: PRS
+          seats: 112
+          becomes: []
+          color: rgb(255, 124, 115)
+        - name: PRRRS
+          seats: 192
+          becomes: []
+          color: rgb(255, 171, 171)
+        - name: PRD
+          seats: 108
+          becomes: []
+          color: rgb(166, 200, 240)
+        - name: Fédération républicaine
+          seats: 100
+          becomes: []
+          color: rgb(31, 73, 123)
+    - name: Élections législatives françaises de 1919
+      date: "1919-11-30"
+      parties:
+        - name: SFIO
+          seats: 68
+          becomes: []
+          color: rgb(240, 62, 62)
+        - name: PRS
+          seats: 112
+          becomes: []
+          color: rgb(255, 124, 115)
+        - name: Bloc national
+          seats: 412
+          becomes: []
+          color: rgb(166, 200, 240)
+        - name: Sans étiquette
+          seats: 21
+          becomes: []
+          color: rgb(174, 170, 170)
+    - name: Élections législatives françaises de 1924
+      date: "1924-05-25"
+      parties:
+        - name: "PC-SFIC "
+          seats: 26
+          becomes: []
+          color: rgb(217, 0, 0)
+        - name: "SFIO "
+          seats: 120
+          becomes: []
+          color: rgb(240, 62, 62)
+        - name: "PRS "
+          seats: 65
+          becomes: []
+          color: rgb(255, 124, 115)
+        - name: "PRRRS "
+          seats: 118
+          becomes: []
+          color: rgb(255, 171, 171)
+        - name: "PRDS "
+          seats: 113
+          becomes: []
+          color: rgb(166, 200, 240)
+        - name: "Fédération républicaine "
+          seats: 139
+          becomes: []
+          color: rgb(31, 73, 123)
+    - name: Élections législatives françaises de 1928
+      date: "1928-04-29"
+      parties:
+        - name: "PC-SFIC "
+          seats: 60
+          becomes: []
+          color: rgb(217, 0, 0)
+        - name: "SFIO "
+          seats: 102
+          becomes: []
+          color: rgb(240, 62, 62)
+        - name: "PRS "
+          seats: 34
+          becomes: []
+          color: rgb(255, 124, 115)
+        - name: "PRRRS "
+          seats: 100
+          becomes: []
+          color: rgb(255, 171, 171)
+        - name: "AD "
+          seats: 183
+          becomes: []
+          color: rgb(166, 200, 240)
+        - name: "Fédération républicaine "
+          seats: 125
+          becomes: []
+          color: rgb(31, 73, 123)
+    - name: Élections législatives françaises de 1932
+      date: "1932-05-08"
+      parties:
+        - name: "PUP "
+          seats: 9
+          becomes: []
+          color: rgb(115, 0, 0)
+        - name: "PC-SFIC "
+          seats: 23
+          becomes: []
+          color: rgb(217, 0, 0)
+        - name: "SFIO "
+          seats: 131
+          becomes: []
+          color: rgb(240, 62, 62)
+        - name: "PRS "
+          seats: 20
+          becomes: []
+          color: rgb(255, 124, 115)
+        - name: "PRRRS "
+          seats: 160
+          becomes: []
+          color: rgb(255, 171, 171)
+        - name: "PDP "
+          seats: 62
+          becomes: []
+          color: rgb(251, 236, 93)
+        - name: "AD "
+          seats: 104
+          becomes: []
+          color: rgb(166, 200, 240)
+        - name: "Fédération républicaine "
+          seats: 98
+          becomes: []
+          color: rgb(31, 73, 123)
+    - name: Élections législatives françaises de 1936
+      date: "1936-05-03"
+      parties:
+        - name: Parti communiste (SFIC) (PC-SFIC)
+          seats: 72
+          becomes: []
+          color: rgb(217, 0, 0)
+        - name: Section française de l'Internationale ouvrière (SFIO)
+          seats: 149
+          becomes: []
+          color: rgb(240, 62, 62)
+        - name: Parti républicain, radical et radical-socialiste (PRRRS)
+          seats: 110
+          becomes: []
+          color: rgb(255, 171, 171)
+        - name: Divers gauche (DVG)
+          seats: 38
+          becomes: []
+          color: "#ffc0c0"
+        - name: Alliance démocratique, Radicaux indépendants, Parti démocrate populaire (AD-RI-PDP)
+          seats: 111
+          becomes: []
+          color: rgb(166, 200, 240)
+        - name: Fédération républicaine (FR)
+          seats: 60
+          becomes: []
+          color: rgb(31, 73, 123)
+        - name: Union populaire républicaine (UPR)
+          seats: 10
+          becomes: []
+          color: darkblue
+        - name: Parti populaire français (PPF)
+          seats: 40
+          becomes: []
+          color: black
+        - name: Parti républicain national et social (PRNS)
+          seats: 3
+          becomes: []
+          color: black
+    - name: Assemblée constituante de 1945
+      date: "1945-11-06"
+      parties:
+        - name: Communistes et Républicains et Résistants
+          seats: 159
+          becomes: []
+          color: "#dd0000"
+        - name: Mouvement républicain populaire
+          seats: 151
+          becomes: []
+          color: "#00FFFF"
+        - name: Section française de l'Internationale ouvrière et Musulman Algérien
+          seats: 146
+          becomes: []
+          color: "#FF8080"
+        - name: Union démocratique et socialiste de la Résistance et Paysan
+          seats: 42
+          becomes: []
+          color: "#ff55a3"
+        - name: Parti républicain de la liberté
+          seats: 39
+          becomes: []
+          color: "#0066cc"
+        - name: Parti républicain, radical et radical-socialiste
+          seats: 29
+          becomes: []
+          color: "#dd0000"
+        - name: Républicains indépendants
+          seats: 14
+          becomes: []
+          color: "#00FFFF"
+        - name: Députés non-inscrits
+          seats: 6
+          becomes: []
+          color: "#aab1b1"
+    - name: Assemblée constituante de 1946
+      date: "1946-06-11"
+      parties:
+        - name: Mouvement républicain populaire
+          seats: 166
+          becomes: []
+          color: "#00FFFF"
+        - name: Communistes
+          seats: 153
+          becomes: []
+          color: "#dd0000"
+        - name: Section française de l'Internationale ouvrière
+          seats: 128
+          becomes: []
+          color: "#FF8080"
+        - name: Parti républicain de la liberté
+          seats: 35
+          becomes: []
+          color: "#0066cc"
+        - name: Parti républicain, radical et radical-socialiste
+          seats: 32
+          becomes: []
+          color: "#ff8080"
+        - name: Républicains indépendants & Parti paysan d'union sociale
+          seats: 32
+          becomes: []
+          color: "#00FFFF"
+        - name: Union démocratique et socialiste de la Résistance
+          seats: 20
+          becomes: []
+          color: "#ff55a3"
+        - name: Union démocratique du manifeste algérien
+          seats: 11
+          becomes: []
+          color: "#ffcc33"
+        - name: Députés non-inscrits
+          seats: 9
+          becomes: []
+          color: "#aab1b1"
     - name: Ire législature de la Quatrième République française
       date: "1946-11-28"
       parties:

@@ -1,7 +1,7 @@
 import readLegislatures from "./readLegislatures";
 import libxml from "libxmljs";
 
-const barWidth = 1;
+const barWidth = 5;
 const paddingPerCol = 50;
 const partyPerCol = 500;
 const sessionLengthScaleFactor = 500000000;
